@@ -1,0 +1,63 @@
+﻿@model IEnumerable<The_New_Paradise.Models.ServicesTable>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Service_Namee)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Service_Type)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Service_Price)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Service_Time)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Service_Description)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Customer.Customer_Name)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Service_Namee)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Service_Type)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Service_Price)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Service_Time)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Service_Description)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Customer.Customer_Name)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.Service_ID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.Service_ID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.Service_ID })
+        </td>
+    </tr>
+}
+
+</table>

@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ProjectHeavenModelStoreContainer" CdmEntityContainer="ProjectHeavenEntities">
+    <EntitySetMapping Name="AdminTables">
+      <EntityTypeMapping TypeName="ProjectHeavenModel.AdminTable">
+        <MappingFragment StoreEntitySet="AdminTable">
+          <ScalarProperty Name="Admin_ID" ColumnName="Admin_ID" />
+          <ScalarProperty Name="Admin_Name" ColumnName="Admin_Name" />
+          <ScalarProperty Name="Admin_Phone" ColumnName="Admin_Phone" />
+          <ScalarProperty Name="Admin_Address" ColumnName="Admin_Address" />
+          <ScalarProperty Name="Admin_Email" ColumnName="Admin_Email" />
+          <ScalarProperty Name="Admin_Password" ColumnName="Admin_Password" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Customers">
+      <EntityTypeMapping TypeName="ProjectHeavenModel.Customer">
+        <MappingFragment StoreEntitySet="Customer">
+          <ScalarProperty Name="Customer_ID" ColumnName="Customer_ID" />
+          <ScalarProperty Name="Customer_Name" ColumnName="Customer_Name" />
+          <ScalarProperty Name="Customer_Gender" ColumnName="Customer_Gender" />
+          <ScalarProperty Name="Customer_Phone" ColumnName="Customer_Phone" />
+          <ScalarProperty Name="Customer_Address" ColumnName="Customer_Address" />
+          <ScalarProperty Name="Customer_Email" ColumnName="Customer_Email" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Employees">
+      <EntityTypeMapping TypeName="ProjectHeavenModel.Employee">
+        <MappingFragment StoreEntitySet="Employee">
+          <ScalarProperty Name="Employee_ID" ColumnName="Employee_ID" />
+          <ScalarProperty Name="Employee_Name" ColumnName="Employee_Name" />
+          <ScalarProperty Name="Employee_Phone" ColumnName="Employee_Phone" />
+          <ScalarProperty Name="Employee_Address" ColumnName="Employee_Address" />
+          <ScalarProperty Name="Employee_Email" ColumnName="Employee_Email" />
+          <ScalarProperty Name="Employee_Salary" ColumnName="Employee_Salary" />
+          <ScalarProperty Name="Employee_Experience" ColumnName="Employee_Experience" />
+          <ScalarProperty Name="Employee_Department" ColumnName="Employee_Department" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Products">
+      <EntityTypeMapping TypeName="ProjectHeavenModel.Product">
+        <MappingFragment StoreEntitySet="Products">
+          <ScalarProperty Name="Product_ID" ColumnName="Product_ID" />
+          <ScalarProperty Name="Product_Name" ColumnName="Product_Name" />
+          <ScalarProperty Name="Product_Type" ColumnName="Product_Type" />
+          <ScalarProperty Name="Product_Price" ColumnName="Product_Price" />
+          <ScalarProperty Name="Product_Quantity" ColumnName="Product_Quantity" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ServicesTables">
+      <EntityTypeMapping TypeName="ProjectHeavenModel.ServicesTable">
+        <MappingFragment StoreEntitySet="ServicesTable">
+          <ScalarProperty Name="Service_ID" ColumnName="Service_ID" />
+          <ScalarProperty Name="Service_Namee" ColumnName="Service_Namee" />
+          <ScalarProperty Name="Service_Type" ColumnName="Service_Type" />
+          <ScalarProperty Name="Service_Price" ColumnName="Service_Price" />
+          <ScalarProperty Name="Service_Time" ColumnName="Service_Time" />
+          <ScalarProperty Name="Service_Description" ColumnName="Service_Description" />
+          <ScalarProperty Name="Service_feedback" ColumnName="Service_feedback" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
