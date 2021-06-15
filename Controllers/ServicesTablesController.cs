@@ -12,7 +12,7 @@ namespace The_New_Paradise.Controllers
 {
     public class ServicesTablesController : Controller
     {
-        private ProjectHeavenEntities2 db = new ProjectHeavenEntities2();
+        private readonly ProjectHeavenEntities2 db = new ProjectHeavenEntities2();
 
         // GET: ServicesTables
        
